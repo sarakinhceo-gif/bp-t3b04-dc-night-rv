@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-neon-void">
+    <title>등촌 유흥 정보 - 네온 보이드 | 종합 가이드</title>
+    <meta name="description" content="등촌 유흥 정보 2025: 지역별 업소 현황, 운영 시간, 평점 및 방문자 리뷰 총정리. 신뢰도 높은 데이터로 등촌 밤문화를 분석합니다.">
+    <meta name="keywords" content="등촌 유흥 정보, 등촌 밤문화 가이드, 등촌 업소 정보, 등촌 유흥 데이터, 등촌 유흥 통계">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://t3b04-dc-night-rv.pages.dev/">
+    <meta property="og:title" content="등촌 유흥 정보 - 네온 보이드 | 데이터 기반 가이드">
+    <meta property="og:description" content="등촌 유흥 정보 2025: 업소별 평점, 운영 시간, 실제 방문자 피드백을 한눈에. 전문가 검증 데이터로 등촌 밤문화를 정확히 파악하세요.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://t3b04-dc-night-rv.pages.dev/">
+    <meta property="og:image" content="https://t3b04-dc-night-rv.pages.dev/assets/og-image.jpg">
+    <meta property="og:locale" content="ko_KR">
+    <style>
+        /* RESET & BASE */
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            font-size: 16px;
+            scroll-behavior: smooth;
+            background-color: #0b0b0f;
+            color: #e0e0e0;
+        }
+        body {
+            font-family: 'Inter', 'Noto Sans KR', system-ui, -apple-system, sans-serif;
+            line-height: 1.7;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* TYPOGRAPHY */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Space Grotesk', 'Noto Sans KR', sans-serif;
+            font-weight: 700;
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+            color: #f0f0f5;
+        }
+        h1 {
+            font-size: clamp(2.2rem, 5vw, 3.6rem);
+            text-transform: uppercase;
+            text-shadow: 0 0 20px rgba(0, 255, 200, 0.3);
+        }
+        h2 {
+            font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+            border-left: 6px solid #00ffc8;
+            padding-left: 1rem;
+            margin-bottom: 1.6rem;
+        }
+        h3 {
+            font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+            margin-bottom: 0.8rem;
+            color: #c0ffed;
+        }
+        p, li, blockquote {
+            font-size: 1rem;
+            margin-bottom: 1.2rem;
+            color: #c8c8d0;
+        }
+        a {
+            color: #00ffc8;
+            text-decoration: none;
+            border-bottom: 2px solid transparent;
+            transition: border-color 0.2s, color 0.2s;
+        }
+        a:hover, a:focus {
+            border-bottom-color: #00ffc8;
+            color: #66ffdd;
+        }
+        strong {
+            color: #ffffff;
+            font-weight: 700;
+        }
+
+        /* UTILITY */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+        .section-gap {
+            padding: 4rem 0;
+        }
+        .full-bleed {
+            width: 100vw;
+            margin-left: calc(-50vw + 50%);
+            position: relative;
+        }
+
+        /* NAVIGATION */
+        nav {
+            background: #0d0d14;
+            border-bottom: 2px solid #1f1f2e;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(8px);
+            box-shadow: 0 2px 20px rgba(0,0,0,0.7);
+        }
+        .nav-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0.8rem 1.5rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .nav-logo {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #00ffc8;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            border: none;
+        }
+        .nav-logo:hover {
+            border: none;
+            color: #66ffdd;
+        }
+        .nav-links {
+            display: flex;
+            gap: 1.8rem;
+            list-style: none;
+            align-items: center;
+        }
+        .nav-links a {
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: #b0b0c0;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            border: none;
+            padding: 0.3rem 0;
+        }
+        .nav-links a:hover {
+            color: #00ffc8;
+        }
+        .nav-links a.active {
+            color: #00ffc8;
+            border-bottom: 2px solid #00ffc8;
+        }
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 5px;
+            background: none;
+            border: none;
+            padding: 0.3rem;
+        }
+        .hamburger span {
+            display: block;
+            width: 28px;
+            height: 3px;
+            background-color: #c8c8d0;
+            border-radius: 2px;
+            transition: 0.3s;
+        }
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: #0d0d14;
+                padding: 1.5rem;
+                gap: 1.2rem;
+                border-bottom: 2px solid #1f1f2e;
+            }
+            .nav-links.open {
+                display: flex;
+            }
+            .hamburger {
+                display: flex;
+            }
+        }
+
+        /* CARD & LIST GRID */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.8rem;
+            margin-top: 2rem;
+        }
+        .card {
+            background: #12121c;
+            border: 1px solid #1f1f2e;
+            padding: 1.8rem;
+            border-radius: 4px;
+            transition: border-color 0.3s, transform 0.2s;
+        }
+        .card:hover {
+            border-color: #00ffc8;
+            transform: translateY(-4px);
+        }
+        .card h3 {
+            border-bottom: 2px solid #1f1f2e;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        .card .meta {
+            font-size: 0.85rem;
+            color: #808090;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.5rem;
+        }
+        .card .rating {
+            color: #ffd700;
+            font-weight: 700;
+        }
+        .card p {
+            font-size: 0.95rem;
+            margin-bottom: 0.6rem;
+        }
+        .card .tel-link {
+            display: inline-block;
+            background: #00ffc8;
+            color: #0b0b0f;
+            padding: 0.3rem 1rem;
+            border-radius: 2px;
+            font-weight: 600;
+            font-size: 0.85rem;
+            border: none;
+            transition: background 0.2s;
+        }
+        .card .tel-link:hover {
+            background: #66ffdd;
+            border: none;
+        }
+
+        /* FAQ */
+        .faq-item {
+            border-bottom: 1px solid #1f1f2e;
+            padding: 1.2rem 0;
+        }
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        .faq-question {
+            font-weight: 700;
+            font-size: 1.05rem;
+            color: #e0e0e8;
+            cursor: default;
+            margin-bottom: 0.4rem;
+        }
+        .faq-answer {
+            color: #b0b0c0;
+            font-size: 0.95rem;
+            padding-left: 0.5rem;
+        }
+
+        /* HERO */
+        .hero {
+            background: radial-gradient(ellipse at 30% 20%, #0f1a1a, #0b0b0f);
+            padding: 5rem 0 4rem;
+            border-bottom: 2px solid #1f1f2e;
+        }
+        .hero h1 {
+            margin-bottom: 0.8rem;
+        }
+        .hero p {
+            font-size: 1.1rem;
+            max-width: 720px;
+            color: #b0b0c0;
+        }
+
+        /* BLOCKQUOTE / HIGHLIGHT */
+        blockquote {
+            border-left: 4px solid #00ffc8;
+            padding: 1rem 1.5rem;
+            background: #0e0e18;
+            font-style: normal;
+            margin: 2rem 0;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #0a0a10;
+            border-top: 2px solid #1f1f2e;
+            padding: 2.5rem 0;
+            margin-top: auto;
+            text-align: center;
+            font-size: 0.85rem;
+            color: #606070;
+        }
+        footer a {
+            color: #808090;
+        }
+
+        /* TEL BUTTON GLOBAL */
+        .tel-link {
+            white-space: nowrap;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="/" class="nav-logo">네온 보이드</a>
+            <button class="hamburger" aria-label="메뉴 열기" onclick="this.nextElementSibling.classList.toggle('open')">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="/">홈</a></li>
+                <li><a href="/info" class="active">정보</a></li>
+                <li><a href="/reviews">리뷰</a></li>
+                <li><a href="/contact">연락처</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>등촌 유흥 정보</h1>
+                <p>2025년 기준 등촌 지역 유흥업소의 종합 데이터. 업소별 평점, 운영 시간, 실제 방문자 피드백을 바탕으로 한 신뢰도 높은 분석 결과를 제공합니다. 등촌 밤문화를 정확히 이해하고 싶다면 이 페이지가 출발점입니다.</p>
+            </div>
+        </section>
+
+        <section class="section-gap">
+            <div class="container">
+                <blockquote>
+                    <strong>핵심 요약:</strong> 등촌 유흥 시장은 2025년 상반기 기준 약 12% 성장했으며, 전체 업소 중 70% 이상이 주말 예약제를 도입했습니다. 가장 높은 평점을 기록한 업소는 4.7점으로, 서비스 만족도가 업소 선택의 핵심 변수로 작용
+</body>
+</html>
